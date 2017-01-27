@@ -182,6 +182,16 @@ form{
 	margin-top:15px;
 }
 
+form #pretty{
+	font-family: 'Georgia', Times, "Times New Roman", serif;
+	font-size: 20px;
+	height:30px;
+	width: 100px;
+	background-color: #4aaaa5;
+	color:#ffffff;
+	text-align: center;
+}
+
 #comment{
 	width: 550px;
 	height: 100px;
@@ -336,6 +346,7 @@ footer p{
 	.logo h1{
 		text-align: center;
 		font-size: 210%;
+		padding-top: .3em;
 	}
 
 	.navbar{
@@ -391,5 +402,74 @@ footer p{
 		display: inline-block;
 		float: left;
 		clear: left;
+	}
+
+	form{
+		margin:auto;
+		margin-top: 1em;
+	}
+
+	form #pretty{
+		font-size: 150%;
+		padding:0.5% 0;
+		height:2.5em;
+		width: 100%;
+	}
+
+	form #nom{
+		width:100%;
+	}
+
+	form #letter{
+		width:100%;
+	}
+
+	form #comment{
+		width: 100%;
+		height:10em;
+	}
+
+	.projects{
+		padding: .05% 0em;
+	}
+
+	.projects p {
+		font-size: 3em;
+		height: 1.1em;
+		padding:0;
+		padding-top:.0%;
+		margin:0;
+		text-align: center;
+		top: 3.5em;
+	}
+
+	.left{
+		width: 100%;
+		height: 20em;
+		float: left;
+		margin: 0;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		padding:0;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+
+	.right{
+		width:100%;
+		height: 20em;
+		float: left;
+		margin: 0;
+		margin-top:1%;
+		margin-bottom:1%
+		padding:0;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+
+	.text{
+		text-align:center;
+		font-size: 3em;
+		top: 2.3em;
 	}
 }
