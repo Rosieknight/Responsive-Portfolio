@@ -307,31 +307,178 @@ footer p{
 	html, body{
 		width:100%;
 	}
-
+	
 	.play{
 		width: 100%;
 	}
-
+	
 	header{
 		width: 100%;
 	}
-
+	
 	.logo{
 		width: 40%;
 	}
 }
 
 @media screen and (max-width: 768px){
+	
+	.play{
+		width:100%;
+	}
+	
+	header{
+		width: 100%;
+		border-bottom: 2px solid #cccccc;
+	}
+	
+	.logo{
+		width:33.33%;
+		height: 100%;
+		display: inline-block;
+		margin:0;
+		margin-left: 5%;
+		text-align: center;
+	}
+	
+	/*The font in the logo is not vertically centered because
+	my name swaps from single line to double line at a screen
+	width of 662. I felt this was the best compromise between
+	the two looks.*/
+	
+	.logo h1{
+		font-size: 190%;
+		padding-top: .5em;
+	}
+	
+	.navbar{
+		width: 40%;
+		height: 30%;
+		margin:0;
+		margin-top:6%;
+		float: right;
+	}
+	
+	li{
+		width:33.33%;
+		text-align: center;
+	}
+	
+	.tree{
+		width:100%;
+		margin:0;
+	}
+	
+	.main{
+		width: 95%;
+		border-width:2px;
+		padding:1% .5% .5% .5%;
+		margin: 75px 1% .5% 1%; 
+		display:inline-block;
+	}
+	
+	.main p{
+		padding: 1% .9%;
+	}
+	
+	#me{
+		width: 40%;
+		height: 15em;
+		margin:1.2% 1% .3% .5%;
+		padding:0;
+	
+	}
+	
+	.sidebar{
+		width: 95%;
+		display:block;
+		text-align: left;
+		border-width: 2px;
+		padding-left:1.5%;
+		margin: .6% 2% 2% 1%;
+	}
 
+	.icon{
+		display: inline-block;
+		float:left;
+	}
+	
+	.projects{
+		width: 100%;
+		height:35em;
+		margin:1%;
+		margin-left:0;
+	}
+
+	.projects p{
+		width: 100%;
+		height: 25%;
+		padding:0;
+		padding-top: .5%;
+		margin-top:5%;
+		font-size: 210%;
+	}
+
+	.left{
+		width: 45%;
+		height: 10em;
+		margin: 2% 2% 3% 2%;
+		float: left;
+	}
+	
+	.right{
+		width: 45%;
+		height: 10em;
+		margin: 2% 2% 3% 2%;
+		float: right;
+	} 
+
+	.text{
+		text-align: center;
+		font-size: 2.5em;
+		padding: 0;
+		top: .5em;
+	}
+
+	.form{
+		width: 98%;
+		padding-left: 5%
+	}
+
+	#nombre{
+		margin-left: .25%;
+	}
+
+	#nom{
+		width: 98%;
+		margin-left: .25%;
+	}
+
+	#note{
+		margin-left:.25%;
+	}
+
+	#letter{
+		width: 98%;
+		margin-left:.25%;
+	}
+
+	#remark{
+		margin-left: .25%;
+	}
+
+	#comment{
+		width: 98%;
+		margin-left:.25%;
+	}
+
+	#pretty{
+		margin-bottom: 1%;
+	}
 }
 
 @media screen and (max-width: 640px){
 	
-	h1{
-		font-size:100%;
-		padding-top:2.5%;
-	}
-
 	header{
 		width:100%;
 		position: static;
@@ -352,6 +499,11 @@ footer p{
 	.navbar{
 		width:100%;
 		height:40%;
+		float: none;
+	}
+
+	li{
+		width: 33.33%;
 	}
 
 	.play{
@@ -392,6 +544,11 @@ footer p{
 		border-left-style: none;
 		margin-top:1.5%;
 		margin-bottom: 3%;
+		text-align: center;
+	}
+
+	.icon{
+		float: none;
 	}
 
 	#me{
@@ -409,10 +566,13 @@ footer p{
 		margin-top: 1em;
 	}
 
+	/*The Submit button is below. I wanted it the full width of 
+	the screen to make it easy to see, even on the smallest screen.*/
+
 	form #pretty{
 		font-size: 150%;
-		padding:0.5% 0;
-		height:2.5em;
+		padding:0.25% 0;
+		height:1.5em;
 		width: 100%;
 	}
 
@@ -431,45 +591,48 @@ footer p{
 
 	.projects{
 		padding: .05% 0em;
+		padding-bottom: .05em;
+		margin:0;
 	}
 
 	.projects p {
-		font-size: 3em;
-		height: 1.1em;
+		font-size: 200%;
+		height: 1em;
 		padding:0;
-		padding-top:.0%;
+		padding-top: .05%;
+		padding-bottom:0;
 		margin:0;
 		text-align: center;
-		top: 3.5em;
+		top: 55%;
 	}
 
 	.left{
 		width: 100%;
-		height: 20em;
+		height: 10em;
 		float: left;
 		margin: 0;
-		margin-top: 1%;
-		margin-bottom: 1%;
+		margin-top: 1.5%;
+		margin-bottom: .3em;
 		padding:0;
 		padding-top: 1%;
-		padding-bottom: 1%;
+		padding-bottom: .2%;
 	}
 
 	.right{
 		width:100%;
-		height: 20em;
+		height: 10em;
 		float: left;
 		margin: 0;
-		margin-top:1%;
-		margin-bottom:1%
+		margin-top: 1.5%;
+		margin-bottom: .3em;
 		padding:0;
 		padding-top: 1%;
-		padding-bottom: 1%;
+		padding-bottom: .2%;
 	}
 
 	.text{
 		text-align:center;
 		font-size: 3em;
-		top: 2.3em;
+ 		top: .75em;
 	}
 }
